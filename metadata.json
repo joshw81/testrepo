@@ -1,10 +1,7 @@
 {
-    "itemDisplayName": "Blank New Template",
-    "description": "A blank template and empty parameters new file.",
-    "summary": "A blank template and a new unempty file.  Use this template as the framework for your custom deployment.",
-    "githubUsername": "bmoore-msft",
-    "dateUpdated": "2016-09-28"
-  }
-
-
-  
+  "itemDisplayName": "101-1vm-2nics-2subnets-1vnet",
+  "description": "Creates a new VM with two NICs which connect to two different subnets within the same VNet.",
+  "summary": "Creates a new VM with two NICs which connect to two different subnets within the same VNet.",
+  "githubUsername": "lmoxiel",
+  "dateUpdated": "2017-07-14"
+}
