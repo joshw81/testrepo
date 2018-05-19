@@ -1,12 +1,7 @@
 {
     "itemDisplayName": "Blank New Template",
-<<<<<<< HEAD
-    "description": "A blank template and empty parameters file.",
-    "summary": "A blank template and a new empty files.  Use this template as the framework for your custom deployment.",
-=======
     "description": "A blank template and empty parameters new file.",
-    "summary": "A blank template and a new empty file.  Use this template as the framework for your custom deployment.",
->>>>>>> 35429795d4c93183974ef188c76ac43d67458475
+    "summary": "A blank template and a new unempty file.  Use this template as the framework for your custom deployment.",
     "githubUsername": "bmoore-msft",
     "dateUpdated": "2016-09-28"
   }
