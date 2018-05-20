@@ -1,0 +1,12 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "virtualNetworks_vnet2_name": {
+            "value": "vnet3"
+        },
+        "subnets_vnet2subnet_name": {
+            "value": "vnet3subnet"
+        }
+    }
+}

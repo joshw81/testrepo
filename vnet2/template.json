@@ -1,0 +1,65 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "virtualNetworks_vnet2_name": {
+            "defaultValue": "vnet2",
+            "type": "String"
+        },
+        "subnets_vnet2subnet_name": {
+            "defaultValue": "vnet2subnet",
+            "type": "String"
+        }
+    },
+    "variables": {},
+    "resources": [
+        {
+            "comments": "Generalized from resource: '/subscriptions/90ec03a5-aee2-4ded-8004-c76af423429b/resourceGroups/vnet2/providers/Microsoft.Network/virtualNetworks/vnet2'.",
+            "type": "Microsoft.Network/virtualNetworks",
+            "name": "[parameters('virtualNetworks_vnet2_name')]",
+            "apiVersion": "2018-02-01",
+            "location": "eastus",
+            "tags": {
+                "owner2":"Heidi"
+            },
+            "scale": null,
+            "properties": {
+                "provisioningState": "Succeeded",
+                "resourceGuid": "0bf1d532-da25-4f97-ba34-876bcf6ee369",
+                "addressSpace": {
+                    "addressPrefixes": [
+                        "10.2.0.0/16"
+                    ]
+                },
+                "subnets": [
+                    {
+                        "name": "[concat(parameters('virtualNetworks_vnet2_name'),'subnet')]",
+                        "etag": "W/\"7ef4a140-6970-464b-8d66-4162719a4729\"",
+                        "properties": {
+                            "provisioningState": "Succeeded",
+                            "addressPrefix": "10.2.0.0/24"
+                        }
+                    }
+                ],
+                "virtualNetworkPeerings": [],
+                "enableDdosProtection": false,
+                "enableVmProtection": false
+            },
+            "dependsOn": []
+        },
+        {
+            "comments": "Generalized from resource: '/subscriptions/90ec03a5-aee2-4ded-8004-c76af423429b/resourceGroups/vnet2/providers/Microsoft.Network/virtualNetworks/vnet2/subnets/vnet2subnet'.",
+            "type": "Microsoft.Network/virtualNetworks/subnets",
+            "name": "[concat(parameters('virtualNetworks_vnet2_name'), '/', parameters('subnets_vnet2subnet_name'))]",
+            "apiVersion": "2018-02-01",
+            "scale": null,
+            "properties": {
+                "provisioningState": "Succeeded",
+                "addressPrefix": "10.2.0.0/24"
+            },
+            "dependsOn": [
+                "[resourceId('Microsoft.Network/virtualNetworks', parameters('virtualNetworks_vnet2_name'))]"
+            ]
+        }
+    ]
+}
